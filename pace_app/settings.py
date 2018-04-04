@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pace_app',
     'faculty',
+    'student',
 ]
 
 MIDDLEWARE = [

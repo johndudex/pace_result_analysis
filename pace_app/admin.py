@@ -4,7 +4,7 @@ from pace_app.models import Subject
 
 
 class SubjectAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('name', 'subject_code')
 
 
 admin.site.register(Subject, SubjectAdmin)
