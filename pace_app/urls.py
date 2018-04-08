@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import index
+from .views import index, usn_search, marks_details
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index)
+    path('', index),
+    path("usn_search", usn_search),
+    path('marks_details/<int:id>', marks_details)
 ]
